@@ -30,7 +30,7 @@ public class Common {
             e.printStackTrace();
         }
         waitedSec += second;
-        System.out.println("## Total Waited Seconds:["+waitedSec+"]");
+        //System.out.println("## Total Waited Seconds:["+waitedSec+"]");
     }
 
     //Simple String log
@@ -69,7 +69,7 @@ public class Common {
 
     //For setting up data in input text element, pass xpath of element and value you want to set
     public void setText(String xpath, String value) {
-        System.out.println("## SetText: " + value);
+        //System.out.println("## SetText: " + value);
         if(!value.equalsIgnoreCase("null") ){
             try {
                 driver.findElementByXPath(xpath).clear();
@@ -81,6 +81,7 @@ public class Common {
             }
         }
     }
+
 
     //For setting up data in input textbox with element name and value you want to set
     public void setTextByName(String name, String value){
